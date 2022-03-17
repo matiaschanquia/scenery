@@ -3,9 +3,11 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scenery | Paisajes Turisticos de Argentina</title>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -18,41 +20,88 @@
             <h1>Scenery</h1>
             <h5>de Argentina</h5>
           </div>
+        </a>
       </div>
-      </a>
-      <a id="boton-login" href="#">
-        <h3>Iniciar sesión</h3>
+      
+      <a id="boton-login" href="login.html">
+        <h3>Iniciar sesión <i class="bi bi-box-arrow-in-right"></i></h3>
       </a>
     </div>
   </header>
   <nav id="menu">
     <ul>
-      <li class="current_page_item"><a href="index.html" accesskey="1" title="">Inicio</a></li>
-      <li><a href="#" accesskey="2" title="">Novedades</a></li>
-      <li><a href="#" accesskey="3" title="">Guias de viaje</a></li>
-      <li><a href="#" accesskey="4" title="">Descuentos</a></li>
-      <li><a href="#" accesskey="5" title="">Contacto</a></li>
+      <li><a href="index.html"><i class="bi bi-house"></i> Inicio</a></li>
+      <li><a href="#"><i class="bi bi-newspaper"></i> Novedades</a></li>
+      <li><a href="#"><i class="bi bi-envelope-paper"></i> Guias de viaje</a></li>
+      <li><a href="#"><i class="bi bi-currency-dollar"></i> Descuentos</a></li>
+      <li><a href="#"><i class="bi bi-person-lines-fill"></i> Contacto</a></li>
     </ul>
   </nav>
   <section id="section">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <br><br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <article class="">
-
+    <div class="regiones">
+      <h2>Regiones de Argentina</h2>
+      <div class="indice-regiones">
+        <img src="./images/regiones.png" alt="regiones de Argentina">
+        <ul>
+          <li><a href="./regiones/noa.html"><span class="noa"></span> Noroeste argentino</a></li><br>
+          <li><a href=""><span class="ch"></span> Chaco</a></li> <br>
+          <li><a href=""><span class="meso"></span> Mesopotamia</a></li><br>
+          <li><a href=""><span class="cuyo"></span> Cuyo</a></li><br>
+          <li><a href=""><span class="si-pa"></span> Sierras Pampeanas</a></li><br>
+          <li><a href=""><span class="pa-hu"></span> Pampa húmeda</a></li><br>
+          <li><a href=""><span class="pa-se"></span> Pampa seca</a></li><br>
+          <li><a href=""><span class="pata"></span> Patagonia</a></li><br>
+          <li><a href=""><span class="an-ar"></span> Antártida Argentina</a></li>
+        </ul>
+      </div>
+    </div>
+    <article class="article">
+      <h2>Cerro de los Siete Colores</h2>
+      <img src="./images/cerro.jpg" alt="cerro de los 7 colores">
+      <p>El Macizo de los Siete Colores es un cerro ubicado en las afueras de la ciudad de Purmamarca sobre la Ruta Nacional 52 que se dirige al Paso de Jama (Frontera Argentina-Chile), a 4 kilómetros de la Ruta Nacional 9 en la provincia de Jujuy (Argentina). <br>
+        La villa de Purmamarca se encuentra a sus pies y ambos forman una de las postales más reconocidas del noroeste argentino.
+        Fue originado alrededor de setenta y cinco millones de años atrás. Está conformado por sedimentos marinos, lacustres y fluviales que fueron depositándose en la zona durante siglos.</p>
+    </article>
+    <div class="div-horizontal"></div>
+    <article class="article">
+      <h2>Glaciar Perito Moreno</h2>
+      <img src="./images/glaciar.jpg" alt="Glaciar Perito Moreno">
+      <p>El glaciar Perito Moreno es una gruesa masa de hielo ubicada en el departamento Lago Argentino de la provincia de Santa Cruz, en el sudoeste de la Argentina, en la región de la Patagonia. Se integra dentro del parque nacional Los Glaciares. <br>
+        Este glaciar se origina en el campo de hielo Patagónico Sur. En su descenso, alcanza el brazo Sur del lago Argentino, con un frente de 5 km de longitud, aflorando sobre el agua con una altura de unos 60 m. <br>
+        Gracias a su constante avance, forma una represa con las aguas del brazo Rico de dicho lago, lo cual genera un desnivel con respecto al resto del lago de hasta 30 m. Por la presión de esta masa líquida se producen filtraciones en el hielo que crean un túnel con una bóveda de más de 50 m de altura. El derrumbe de esta bóveda constituye un inusual espectáculo natural y es uno de los mayores atractivos del parque.</p>
+    </article>
+    <div class="div-horizontal"></div>
+    <article class="article">
+      <h2>Parque Nacional Iguazú</h2>
+      <img src="./images/iguazu.jpg" alt="Parque Nacional Iguazú">
+      <p>El Parque Nacional Iguazú abarca un área de bosque subtropical en la provincia de Misiones de Argentina, en la frontera con Brasil. Dentro del parque, en el río Iguazú, las famosas Cataratas del Iguazú poseen varias cascadas separadas, incluida la icónica Garganta del Diablo. El parque circundante tiene una fauna diversa, incluidos coatíes, jaguares y tucanes, además de senderos y plataformas con miradores.</p>
     </article>
   </section>
 
   <aside id="aside">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <form action="">
+      <input type="text" placeholder="Escribe tu busqueda" name="buscador" id="buscador" required>
+      <label for="buscador"><i class="bi bi-search"></i> </label>
+    </form>
+    <h2>Noticias Relevantes:</h2>
+    <article>
+      <h3><a title="Ver nota" href="https://www.expreso.info/noticias/internacional/87787_322m_de_turistas_viajaron_en_verano_por_argentina" target="_blank">32,2M de turistas viajaron en verano por Argentina.
+        <img src="./images/indec.jpg" alt="indec">
+      </a></h3>
+    </article>
+    <article>
+      <h3><a title="Ver nota" href="https://www.cronista.com/clase/break/los-4-viajes-que-deberias-reservar-ya-si-quieres-disfrutar-de-la-semana-santa/" target="_blank">Los 4 viajes increíbles por Argentina para hacer la reserva ya
+        <img src="./images/arg.jpg" alt="ruta argentina">
+      </a></h3>
+    </article>
   </aside>
-
+  
+  <footer>
+    <div>
+      <p>Copyright "Scenery de Argentina" - 2021 | Diseñado por <a target="_blank" href="https://github.com/matiaschanquia">Matias Chanquia Dev.</a> </p>
+      <p>Defensa de las y los consumidores. Para reclamos <a href="#">click aquí</a>.</p>
+    </div>
+  </footer>
 
 </body>
 
