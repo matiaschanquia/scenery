@@ -7,12 +7,12 @@
 
 body {
   background: #FFF url('../images/bush.png') repeat scroll;
-  /* font-family: 'Dejavu Sans', 'Franklin Gothic'; */
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 
@@ -96,9 +96,12 @@ a {
   background: #414240;
   display: block;
   border-top: solid black 2px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
-#menu ul {
+#menu > ul {
   width: 80%;
   display: flex;
   height: 100%;
@@ -109,14 +112,15 @@ a {
   flex-wrap: wrap;
 }
 
-#menu li {
+#menu > ul > li {
   display: inline-block;
   text-align: center;
   white-space: nowrap;
   margin: 5px 10px;
+  position: relative;
 }
 
-#menu li a {
+#menu > ul > li > a {
   text-decoration: none;
   text-shadow: 2px 1px 1px black;
   color: #a1cdfb;
@@ -125,7 +129,7 @@ a {
   transition: all .15s ease-in-out;
 }
 
-#menu a:hover {
+#menu > ul > li > a:hover {
   transition: all .15s ease-in-out;
   border-bottom: solid 2px #77b6f7;
 }
@@ -133,6 +137,35 @@ a {
 #menu a:active {
   color: #77b6f7;
   text-shadow: none;
+}
+
+#menu .sub-menu {
+  position: absolute;
+  left: -35px;
+  /* top: 25px; */
+  background-color: #a1cdfb;
+  list-style-type: none;
+  display: none;
+  width: 180px;
+  border: #000 solid 1px;
+  z-index: 999;
+}
+
+#menu .sub-menu > li {
+  margin: 4px 0;
+}
+
+#menu .sub-menu > li > a {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+#menu .sub-menu > li > a:hover {
+  color: rgb(214, 214, 214);
+}
+
+#menu > ul > li:hover .sub-menu {
+  display: block;
 }
 
 
@@ -216,11 +249,18 @@ a {
   color: black;
 }
 
+.indice-regiones ul li a:hover {
+  color: rgb(102, 102, 102);
+  text-shadow: 1px 1px 0 white;
+} 
+
 .indice-regiones ul li span {
   border: black solid 1px;
   display: inline-block;
   width: 20px;
   height: 20px;
+  position: relative;
+  top: 3px;
 }
 
 .indice-regiones ul li span.noa {
@@ -367,6 +407,12 @@ footer div p a:hover {
   color: #c2c0c0;
 }
 
+@media (max-width: 575px) {
+  .article img {
+    width: 80%;
+  }
+}
+
 
 
 /* ###################### LOGIN ###################### */
@@ -509,4 +555,49 @@ footer div p a:hover {
   .login-container {
     width: 95%;
   }
+}
+
+
+/* ###################### CONTACT ###################### */
+
+.titulo-contact {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #77b6f7;
+  text-shadow: 1px 1px 0px white, 2px 2px 2px black;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 500px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.form-contact > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-contact textarea {
+  min-width: 200px;
+  min-height: 150px;
+  max-width: 500px;
+  max-height: 200px;
+}
+
+.form-contact [type="submit"] {
+  width: 80px;
+  height: 30px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.nosotros {
+  width: 90%;
+  border: rgb(57, 114, 201) solid 2px;
+  border-radius: 15px;
 }
